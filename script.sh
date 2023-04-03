@@ -22,4 +22,14 @@ elif [ "$1" == "--logs" ]; then
         done
         echo "Utworzono $2 plików log"   
     fi
+elif [ "$1" == "--help" ]; then
+    echo "-------------------------------------------------------------------------------"
+    echo ""
+    echo "Dostępne opcje:"
+    echo "--date: wyświetla dzisiejszą datę"
+    echo "--logs [liczba]: tworzy automatycznie 100 (lub podaną liczbę) plików logx.txt"
+    echo ""
+    echo "-------------------------------------------------------------------------------"
+else
+    echo "Nieznana opcja. Użyj skrypt.sh --help, aby poznać wszystkie dostępne opcje."
 fi
